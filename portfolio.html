@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio | Sarah Doran</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 	
 	</head>
@@ -10,27 +9,78 @@
 	<body>
 			
 		<!-- Navigation Bar	 -->
-		<ul class="nav nav-pills navbar-default">
-  			<li class="btn btn-lg"><a href="index.html">Sarah Doran</a></li>
-   			<li class="navbar-right"><a href="contact.html">Contact</a></li>
-  			<li class="navbar-right active"><a href="portfolio.html">Portfolio</a></li>
-   			<li class="navbar-right"><a href="index.html">About</a></li>
-		</ul>
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand" href="index.html">Sarah Doran</a>
+   				</div>
+
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav navbar-right">
+        			<li><a href="index.html">About<span class="sr-only">(current)</span></a></li>
+        			<li class="active"><a href="portfolio.html">Portfolio</a></li>
+        			<li><a href="contact.html">Contact</a></li>
+      			</ul>
+    		</div>
+  			</div>
+		</nav>
     	<!-- End of navbar -->
-	<br>
 	<!-- Main page container -->
 		<div class="container">	
 			<!-- Header -->
 			<div class="row">
 				<div class="col-md-8">
 					<div class="page-header">
-						<h1>Contact Me</h1>
+						<h1>Portfolio</h1>
+					</div>
+				</div>
+			</div>
+			<!-- Main information -->
+			<div class="row">
+				<div class="col-md-8 panel panel-defaul">
+					<div class="panel-body">
+						<div class="row">
+							<div class="thumbnail col-md-6">
+								<img src="assets/images/cat1.jpg" class="img-responsive center-block" alt="Cat">
+								<caption>Project 1</caption>
+							</div>
+
+							<div class="thumbnail col-md-6">
+								<img src="assets/images/cat2.jpg" class="img-responsive center-block" alt="Another Cat">
+								<caption>Project 2</caption>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="thumbnail col-md-6">
+								<img src="assets/images/cat3.jpg" class="img-responsive center-block" alt="Guess it's another cat!">
+								<caption>Project 3</caption>
+							</div>
+
+							<div class="thumbnail col-md-6">
+								<img src="assets/images/cat4.jpg" class="img-responsive center-block" alt="More Kitty Action">
+								<caption>Project 4</caption>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="thumbnail col-md-6">
+								<img src="assets/images/cat5.jpg" class="img-responsive center-block" alt="Another Cat">
+								<caption>Project 5</caption>
+							</div>
+						</div>
+
 					</div>
 				</div>
 				<div class="col-md-1"></div>
-				<!-- Connect with Me Panel-->
+		<!-- Connect with Me Panel-->
 				<div class="col-md-3">
-
 					<div class="panel panel-info">
 						<div class="panel-heading">
 							<h3 class="panel-title text-center">Connect With Me</h3>
@@ -48,48 +98,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- Main information -->
-			
-			<section class="main-content">
-				<h1>Portfolio</h1>
-				
-					<div class="box">
-						<img src="assets/images/cat1.jpg" alt="Cat">
-
-						<h3>Project 1</h3>
-					</div>
-
-					<div class="box">
-						<img src="assets/images/cat2.jpg" alt="Another Cat">
-
-						<h3>Project 2</h3>
-					</div>
-
-					<div class="box">
-						<img src="assets/images/cat3.jpg" alt="Guess it's another cat!">
-
-						<h3>Project 3</h3>
-					</div>
-
-					<div class="box">
-						<img src="assets/images/cat4.jpg" alt="More Kitty Action">
-
-						<h3>Project 4</h3>
-					</div>
-
-					<div class="box">
-						<img src="assets/images/cat5.jpg" alt="Another Cat">
-
-						<h3>Project 5</h3>
-					</div>
-
-			</section>
-
 		<!-- End of Main Info container -->
-			
+		<br>	
 		<!-- Footer -->
-		<footer class="navbar-fixed-bottom small text-center navbar-default">
-			<div class="container">
+		<footer class="navbar navbar-default navbar-fixed-bottom small text-center">
+			<div class="container-fluid">
 				<p class="row">&copy;Copyright 2016 Sarah Doran</p>
 			</div>
 		</footer>

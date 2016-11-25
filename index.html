@@ -8,14 +8,28 @@
 		
 	<body>
 <!-- Navigation Bar	 -->
-		<ul class="nav nav-pills navbar-default">
-  			<li class="active btn btn-lg"><a href="index.html">Sarah Doran</a></li>
-   			<li class="navbar-right"><a href="contact.html">Contact</a></li>
-  			<li class="navbar-right"><a href="portfolio.html">Portfolio</a></li>
-   			<li class="navbar-right"><a href="index.html">About</a></li>
-		</ul>
+	<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand" href="index.html">Sarah Doran</a>
+   				</div>
+
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class="active"><a href="index.html">About<span class="sr-only">(current)</span></a></li>
+        			<li><a href="portfolio.html">Portfolio</a></li>
+        			<li><a href="contact.html">Contact</a></li>
+      			</ul>
+    		</div>
+  			</div>
+		</nav>
     	<!-- End of navbar -->
-	<br>
 	<!-- Main page container -->
 		<div class="container">	
 			<!-- Header -->
@@ -25,57 +39,49 @@
 						<h1>About Me</h1>
 					</div>
 				</div>
-				<div class="col-md-1"></div>
-				<!-- Connect with Me Panel-->
-				<div class="col-md-3">
-
-					<div class="panel panel-info">
-						<div class="panel-heading">
-							<h3 class="panel-title text-center">Connect With Me</h3>
-						</div>
-						<!-- Link Icons -->
-						<div class="panel-body">
-							<div class="media">
-								<div class="media-middle">
-								<a href="https://www.linkedin.com/in/scdoran" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin Link"></a>
-								<a href="https://github.com/scdoran" target="_blank"><img src="assets/images/github.png" alt="Github Link"></a>
-								<a href="http://stackoverflow.com/users/6833063/sarah-doran" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow Link"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 			<!-- Main information -->
 			<div class="row">
-				<div class="panel panel-default col-md-8">
+				<div class="well col-md-8">
 					<div class="col-md-4">
-						<img src="assets/images/my_picture.jpg" alt="Sarah Doran" class="img-circle block-center">
+						<img src="assets/images/my_picture.jpg" class="img-responsive img-circle center-block" alt="Sarah Doran">
 					</div>
 
 					<div class="col-md-1"></div>
 
-					<div class="panel-default col-md-6">
-						<div class="row">
+					<div class="col-md-6">
 							<p>My name is Sarah Doran. I am an elementary school technology teacher who dreams of becoming a code wizard.  I have taught for three years, but have been in schools for almost five years. Although the teaching scene has been good to me, I strive to do something more creative and challenging for my future career.</p>
-						</div>
 
-						<div class="row">
 							<p>When I am not teaching I am cooking and experimenting with vegetarian meals, visiting local breweries, collecting pins, patches and artwork, and watching "B" horror movies.</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+		<!-- Connect with Me Panel-->
+				<div class="col-md-3">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Connect With Me</h3>
+						</div>
+			<!-- Link Icons -->
+					<div class="panel-body">
+						<div class="media">
+							<div class="media-middle center-block">
+								<a href="https://www.linkedin.com/in/scdoran" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin Link"></a>
+								<a href="https://github.com/scdoran" target="_blank"><img src="assets/images/github.png" alt="Github Link"></a>
+								<a href="http://stackoverflow.com/users/6833063/sarah-doran" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow Link"></a>
+							</div>
 						</div>
 					</div>
 				</div>
 		</div>
 
 		<!-- End of Main Info container -->
-			
-	
+		<br>	
 		<!-- Footer -->
-			<footer class="navbar-fixed-bottom navbar-default small text-center">
-				<div class="container">
-					<p class="row">&copy;Copyright 2016 Sarah Doran</p>
-				</div>
-			</footer>
-			
+			<footer class="navbar navbar-default navbar-fixed-bottom small text-center">
+			<div class="container-fluid">
+				<p class="row">&copy;Copyright 2016 Sarah Doran</p>
+			</div>
+		</footer>
 	</body>
 </html>
