@@ -1,0 +1,22 @@
+/*portfolio page*/
+
+.pic {
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pic-label {
+	border-bottom: 0;
+	position: absolute;
+	font-weight: 300;
+	text-align: center;
+	bottom: 20px;
+	left: 28px;
+	background: #31b0d5;
+	color: #fff;
+	width: 82%;
+}
+
+
+
