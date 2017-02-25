@@ -1,5 +1,19 @@
-/*portfolio page*/
+/*background image for the site*/
+* {
+     margin: 0;
+     background: url("../assets/images/stardust.png") center center fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+}
 
+.media a{
+	margin: 0 3.75px;
+}
+
+/*portfolio page*/
 .pic {
 	float: left;
 	overflow: auto;
@@ -27,6 +41,12 @@
 	background: #5bc0de;
 	color: #fff;
 	width: 100%;
+	opacity: .75;
+}
+
+h3 {
+	background: #5bc0de;
+	margin-top: 10px;
 }
 
 
