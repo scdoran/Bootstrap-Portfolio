@@ -3,23 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Home | Sarah Doran</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css"> 		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 		
 	</head>
 		
 	<body>
 <!-- Navigation Bar	 -->
 	<nav class="navbar navbar-default">
   			<div class="container-fluid">
-    			<div class="navbar-header">
+    			<div class="navbar-header" id="topBar">
+      				<a class="navbar-brand" id="brand" href="index.html">SARAH DORAN</a>
+    			
       				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         				<span class="sr-only">Toggle navigation</span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
-      				<a class="navbar-brand" href="index.html">Sarah Doran</a>
    				</div>
 
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,7 +40,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="page-header">
-						<h1>About Me</h1>
+						<h1>ABOUT ME</h1>
 					</div>
 				</div>
 			</div>
@@ -49,7 +51,7 @@
 						<div class= "col-md-3"></div>
 						
 						<div class="col-md-6">
-							<img src="assets/images/my_picture.jpg" class="img-responsive img-circle" alt="Sarah Doran">
+							<img src="assets/images/my_picture.jpg" class="img-responsive img-circle" id="profilePic" alt="Sarah Doran">
 						</div>
 
 						<div class= "col-md-3"></div>
@@ -66,7 +68,7 @@
 							<p>When I am not teaching I am cooking and experimenting with vegetarian meals, visiting local breweries, collecting pins, patches and artwork, and watching "B" horror movies.</p>
 					</div>
 				</div>
-				<!-- <div class="col-md-1"></div> -->
+				<div class="col-md-1"></div>
 		<!-- Connect with Me Panel-->
 				<div class="col-md-3">
 					<div class="panel panel-info">
@@ -97,10 +99,14 @@
 		<!-- End of Main Info container -->
 		<br>	
 		<!-- Footer -->
-			<footer class="navbar navbar-default navbar-fixed-bottom small text-center">
-			<div class="container-fluid">
+			<footer class="navbar navbar-default navbar-fixed-bottom small text-center footer">
+			<div class="container">
 				<p class="row">&copy;Copyright 2016 Sarah Doran</p>
 			</div>
 		</footer>
+
+		<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="assets/app.js"></script>
 	</body>
 </html>

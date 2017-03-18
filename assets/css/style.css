@@ -1,0 +1,105 @@
+/*background image for the site*/
+body {
+     margin: 0;
+     background: url("../images/stardust.png") center center fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+}
+
+.media a{
+	margin: 0 3.75px;
+}
+
+@font-face {
+	font-family: DrippingCool;
+	src: url(Fonts/DrippingCool.ttf);
+}
+
+#brand {
+	font-family: DrippingCool;
+	font-size: 35px;
+	margin-top: 18px;
+	color: #00ff16;
+}
+
+h1{
+	font-family: DrippingCool;
+	color: #00ff16;
+}
+
+.page-header {
+	padding: 0;
+}
+
+.well{
+	 background-color: rgba(245, 245, 245, 0.4);
+	 border-style: none;
+}
+
+#profilePic{
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+/*portfolio page*/
+.pic {
+	float: left;
+	overflow: auto;
+	width: 250px;
+	margin: 20px 20px 10px 75px;
+	position: relative;
+}
+
+.pic:nth-child(even) {
+	margin-left: 75px;
+}
+
+.pic img {
+	width: 100%
+	border: 0 none;
+	opacity: .8;
+}
+
+.pic-label {
+	border-bottom: 0;
+	position: absolute;
+	font-weight: 300;
+	text-align: center;
+	bottom: 10px;
+	background: #45ba4f;
+	color: #fff;
+	width: 100%;
+	opacity: .75;
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+.footer {
+	padding: 0;
+	background-color: rgba(93, 93, 93, .9);
+	position: fixed;
+	bottom: 0;
+}
+
+p {
+	color: #eee;
+}
+
+.navbar{
+	min-height: 30px;
+	background-color: rgba(93, 93, 93, .9);
+	border-style: none;
+}
+
+.panel-info>.panel-heading {
+	background: #45ba4f;
+	color: #eee;
+}
+
+
