@@ -13,6 +13,11 @@ $(document).ready(function(){
 	var formSub = {
 		form: $("#contact"),
 		formValidation: function(){
+
+			var name = $("#name").val().trim();
+			var email = $("#email").val().trim();
+			var message = $("#message").val().trim();
+
 			if (name === " ") {
 				alert("Please enter your name.");
 			} else if (email === " ") {
@@ -44,7 +49,6 @@ $(document).ready(function(){
 			$(".modal").modal();
 			formSub.clear();
 		}).fail(function(data){
-			console.log(data);
 			alert("Oops! It looks like an error occurred and your message wasn't sent.");
 		});
 	});
