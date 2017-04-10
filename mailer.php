@@ -1,15 +1,17 @@
 <?php
     if(isset($_POST['submit'])){
-    $to = "dorans424@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
+    $to = "dorans424@gmail.com"; 
+    $from = $_POST['email']; 
     $name = $_POST['name'];
     $subject = "Form submission";
+    $subject2 = "Form submission";
     $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    mail($from,$subject2,$message2,$headers2);
     echo "Mail Sent. Thank you " . $first_name . ", I will contact you shortly.";
     }
 
