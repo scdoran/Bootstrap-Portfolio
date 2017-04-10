@@ -35,7 +35,7 @@ $(document).ready(function(){
 		}
 	}
 
-	$("#submit").on("click", function(e){
+	$(formSub.form).submit(function(e){
 		e.preventDefault();
 		formSub.formValidation();
 
