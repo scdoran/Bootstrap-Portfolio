@@ -11,7 +11,6 @@
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     echo "Mail Sent. Thank you " . $first_name . ", I will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 
     // // Only process POST reqeusts.

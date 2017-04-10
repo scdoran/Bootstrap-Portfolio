@@ -138,3 +138,9 @@ p {
 	bottom: 50px;
 	width: 100%;
 }
+
+/*Modal Code*/
+
+#modalMessage{
+	color: rgba(93, 93, 93);
+}
