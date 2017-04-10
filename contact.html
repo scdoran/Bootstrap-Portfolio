@@ -46,23 +46,23 @@
 			</div>
 			<!-- Main information -->
 			<div class="row">
-				<form class="panel panel-default col-md-8 well">
+				<form class="panel panel-default col-md-8 well" id="contact" action="mailer.php">
 				<div class="panel-body">
   					<div class="form-group">
     					<label for="name">Name</label>
-    					<input type="name" class="form-control" id="exampleInputEmail1" placeholder="Name">
+    					<input type="name" class="form-control" id="name" placeholder="Name">
   					</div>
 
   					<div class="form-group">
     					<label for="exampleInputEmail1">Email address</label>
-    					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    					<input type="email" class="form-control" id="email" placeholder="Email">
   					</div>
  				
  					<div class="form-group">
     					<label for="message">Message</label>
-						<textarea class="form-control" rows="3"></textarea>  	
+						<textarea class="form-control" id="message" rows="3"></textarea>  	
 					</div>
-  					<button type="submit" class="btn btn-default">Submit</button>
+  					<button type="submit" id="submit" class="btn btn-default">Submit</button>
   				</div>
 				</form>
 				<div class="col-md-1"></div>
@@ -86,6 +86,24 @@
 			</div>
 		</div>
 <!-- End of Main Info container -->
+
+<!-- Modal Container -->
+		<div class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Message Sent</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Thank you for your message! I will be contacting you as soon as possible!</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-success">Close</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		<br>	
 		<!-- Footer -->
 		<footer class="navbar navbar-default navbar-fixed-bottom small text-center footer">

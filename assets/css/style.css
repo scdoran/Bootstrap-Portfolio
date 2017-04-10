@@ -9,13 +9,24 @@ body {
      -o-background-size: cover;
 }
 
-.media a{
-	margin: 0 3.75px;
-}
+/*Font Family*/
 
 @font-face {
 	font-family: DrippingCool;
 	src: url(Fonts/DrippingCool.ttf);
+}
+
+@font-face {
+	font-family: ShockTherapy;
+	src: url(Fonts/shocktherapybb_ital.ttf);
+}
+
+/*General CSS for Navbar and Footer*/
+
+.navbar{
+	min-height: 30px;
+	background-color: rgba(93, 93, 93, .9);
+	border-style: none;
 }
 
 #brand {
@@ -25,9 +36,26 @@ body {
 	color: #00ff16;
 }
 
+.footer {
+	padding: 0;
+	background-color: rgba(93, 93, 93, .9);
+	position: fixed;
+	bottom: 0;
+}
+
+/*Index*/
+
 h1{
 	font-family: DrippingCool;
 	color: #00ff16;
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+p {
+	color: #eee;
 }
 
 .page-header {
@@ -45,61 +73,68 @@ h1{
 	margin-bottom: 10px;
 }
 
+/*Connect With Me Panel*/
+
+.panel-info>.panel-heading {
+	background: rgba(93, 93, 93, .9);
+	color: #eee;
+}
+
+.panel.panel-info{
+	background-color: rgba(245, 245, 245, 0.4);
+}
+
+.media a{
+	margin: 0 3.75px;
+}
+
 /*portfolio page*/
-.pic {
+
+.carousel-caption{
+	font-family: ShockTherapy;
+	color: #00ff16;
+}
+
+.item:hover {
+	opacity: .6;
+}
+
+#portfolioCarousel{
+	margin-bottom: 20px;
+	margin-right: -18px;
+}
+
+/*Old Portfolio Page Code (Complete Block Style)*/
+
+/*.pic {
 	float: left;
 	overflow: auto;
-	width: 250px;
-	margin: 20px 20px 10px 75px;
+	width: 300px;
+	margin: 20px 0px 10px 0px;
 	position: relative;
 }
 
 .pic:nth-child(even) {
-	margin-left: 75px;
-}
+	margin-left: 8px;
+}*/
 
-.pic img {
+/*.pic img {
 	width: 100%
 	border: 0 none;
 	opacity: .8;
-}
+}*/
 
-.pic-label {
+/*.pic img:hover{
+	opacity: .6;
+}*/
+
+/*.pic-label {
 	border-bottom: 0;
 	position: absolute;
-	font-weight: 300;
+	font-size: 50px;
+	font-family: ShockTherapy;
+	color: #00ff16;
 	text-align: center;
-	bottom: 10px;
-	background: #45ba4f;
-	color: #fff;
+	bottom: 50px;
 	width: 100%;
-	opacity: .75;
 }
-
-h3 {
-	margin-top: 10px;
-}
-
-.footer {
-	padding: 0;
-	background-color: rgba(93, 93, 93, .9);
-	position: fixed;
-	bottom: 0;
-}
-
-p {
-	color: #eee;
-}
-
-.navbar{
-	min-height: 30px;
-	background-color: rgba(93, 93, 93, .9);
-	border-style: none;
-}
-
-.panel-info>.panel-heading {
-	background: #45ba4f;
-	color: #eee;
-}
-
-
