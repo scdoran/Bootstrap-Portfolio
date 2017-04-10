@@ -140,7 +140,11 @@ p {
 }
 
 /*Modal Code*/
+.modal-title{
+	font-family: DrippingCool;
+	color: #00ff16;
+}
 
 #modalMessage{
-	color: rgba(93, 93, 93);
+	color: black;
 }
