@@ -20,19 +20,6 @@
     echo "Thank you " . $first_name . ", I will contact you shortly.";
     }
 
-    // $from = new SendGrid\Email($_POST['email']);
-    // $subject = "Email from $_POST['name']";
-    // $to = new SendGrid\Email("Sarah Doran", "dorans424@gmail.com");
-    // $content = new SendGrid\Content($_POST['name'] . " wrote the following:" . "\n\n" . $_POST['message']);
-    // $mail = new SendGrid\Mail($from, $subject, $to, $content);
-    // $apiKey = getenv('SENDGRID_API_KEY');
-    // $sg = new \SendGrid($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);
-    // $response = $sg->client->mail()->send()->post($mail);
-    // echo $response->statusCode();
-    // echo $response->headers();
-    // echo $response->body();
-
-
     // // Only process POST reqeusts.
     // if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     // Get the form fields and remove whitespace.
