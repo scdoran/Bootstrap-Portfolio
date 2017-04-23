@@ -1,7 +1,7 @@
 {
-
-  "require": {
-    "sendgrid/sendgrid": "~5.1"
-  }
+	"name": "sendgrid/sendgrid",
+  	"require": {
+    	"sendgrid/sendgrid": "~5.1"
+  	}
 
 }
