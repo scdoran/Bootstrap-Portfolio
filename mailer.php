@@ -31,7 +31,7 @@
     $from = new SendGrid\Email("$name", "$email_address");
     $subject = "New Message";
     $to = new SendGrid\Email("Sarah Doran", "dorans424@gmail.com");
-    $content = new SendGrid\Content("text/plain", "$message");
+    $content = new SendGrid\Content("$message");
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
     $apiKey = getenv('SENDGRID_API_KEY');
     $sg = new \SendGrid($apiKey);
