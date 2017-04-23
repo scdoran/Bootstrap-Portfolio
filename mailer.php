@@ -19,19 +19,10 @@
     $email_address = strip_tags(htmlspecialchars($_POST['email']));
     $message = strip_tags(htmlspecialchars($_POST['message']));
 
-    // // SendGrid
-    // // update these fields to match your needs
-    // $from = new SendGrid\Email("$name", "$email_address");
-    // $subject = "Subject Line";
-    // $to = new SendGrid\Email(null, "dorans424@gmail.com");
-    // $content = new SendGrid\Content("text/plain", "Contact form submission details:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message");
-
-    // return true; 
-
-    $from = new SendGrid\Email("$name", "$email_address");
+    $from = new SendGrid\Email($name, $email_address);
     $subject = "New Message";
     $to = new SendGrid\Email("Sarah Doran", "dorans424@gmail.com");
-    $content = new SendGrid\Content("$message");
+    $content = new SendGrid\Content($message);
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
     $apiKey = getenv('SENDGRID_API_KEY');
     $sg = new \SendGrid($apiKey);
@@ -39,4 +30,7 @@
     echo $response->statusCode();
     echo $response->headers();
     echo $response->body();
+
+    // return true; 
+    
 ?>
