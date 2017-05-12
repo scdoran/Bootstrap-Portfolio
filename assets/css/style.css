@@ -29,11 +29,14 @@ body {
 	border-style: none;
 }
 
+.navbar-right{
+	margin-top: 20px;
+}
+
 #brand {
-	font-family: DrippingCool;
-	font-size: 35px;
-	margin-top: 18px;
-	color: #00ff16;
+	max-width: 150px;
+	padding: 0;
+	margin: 0;
 }
 
 .footer {
@@ -46,8 +49,9 @@ body {
 /*Index*/
 
 h1{
-	font-family: DrippingCool;
-	color: #00ff16;
+	font-family: 'Poppins', sans-serif;
+	/*color: #00ff16;*/
+	color: white;
 }
 
 h3 {
@@ -55,6 +59,7 @@ h3 {
 }
 
 p {
+	font-family: 'Poppins', sans-serif;
 	color: #eee;
 }
 
