@@ -1,4 +1,47 @@
 $(document).ready(function(){
+	// Page Entry Code
+
+	var done = false;
+
+	function welcome(){
+	    
+		if((done === false) && (on_index === true)) {
+	        $("#welcome").show();
+			$('nav').hide();
+			$('.container').hide();
+			$('footer').hide();
+			done = true;
+		} else if ((done === true) || (on_index === false)) {
+			$("#welcome").hide();
+			$('nav').show();
+			$('.container').show();
+			$('footer').show();
+		}
+
+	}
+
+	function fadeOut(){
+		$("#welcome").fadeOut();
+		$('nav').fadeIn(2000);
+		$('.container').fadeIn(2000);
+		$('footer').fadeIn(2000);
+	}
+
+	function session() {
+	    if (document.cookie.indexOf("visited") >= 0) {
+	        $('#welcome').hide();
+	    } else {
+			welcome();	
+	        document.cookie = "visited";
+	    }
+	}
+
+	session();
+
+	$("#logo").on("click", fadeOut);
+	
+	// Carousel Bootstrap Code
+
 	$(".carousel").carousel();
 
 	$(".carousel-caption").hide()
@@ -9,6 +52,8 @@ $(document).ready(function(){
 	function() {
 		$(".carousel-caption").hide()
 	});
+
+	// Form submission Code
 
 	var formSub = {
 		form: $("#contact"),
